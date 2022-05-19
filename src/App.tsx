@@ -22,7 +22,7 @@ function App() {
     <VStack>
       <BetSelect options={options} onSelect={handleSelect} />
       {status === "loading" && <Spinner />}
-      {bets.length !== 0 && <Bet bet={bets[0]} />}
+      {bets && bets.length !== 0 && <Bet bet={bets[0]} />}
     </VStack>
   );
 }
