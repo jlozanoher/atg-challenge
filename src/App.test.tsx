@@ -1,7 +1,9 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
 import App from "./App";
+import { render, screen } from "./helpers/test-utils/test-utils";
 
-test("renders learn react link", () => {
-  // render(<App />);
+test("renders app, with bet selector", async () => {
+  render(<App />);
+
+  expect(await screen.findByText(/V86/i)).toBeInTheDocument();
 });

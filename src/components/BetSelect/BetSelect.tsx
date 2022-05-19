@@ -12,7 +12,7 @@ const BetSelect = ({ options, onSelect }: Props) => {
   };
 
   return (
-    <S.select onChange={handleSelect}>
+    <S.select onChange={handleSelect} data-testid="select">
       {options.map((e) => (
         <option value={e} key={e}>
           {e}

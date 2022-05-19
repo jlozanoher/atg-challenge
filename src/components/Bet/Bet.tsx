@@ -28,7 +28,7 @@ const Bet = ({ bet }: Props) => {
       )}`}</h2>
 
       {status === "loading" && (
-        <Skeleton>
+        <Skeleton data-testid="skeleton">
           <h1></h1>
           <p></p>
         </Skeleton>
